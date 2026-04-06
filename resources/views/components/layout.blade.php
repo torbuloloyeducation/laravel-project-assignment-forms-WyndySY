@@ -23,7 +23,7 @@
         <a href="/contact">Contact</a>
         <a href="/formtest">Form Test</a>
     </nav>
+<x-navbar />
 {{ $slot }}
-
 </body>
 </html>

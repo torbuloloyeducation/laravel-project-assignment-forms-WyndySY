@@ -1,0 +1,20 @@
+## Understand the Flow
+When the user types an email into the form and clicks submit, the form sends the data to the server using a POST request. 
+The Laravel route receives the email and stores it in the session. After saving, the page reloads. 
+The saved emails are then retrieved from the session and displayed on the page.
+This allows the user to see all previously entered emails.
+
+## Reflection Questions
+
+Answer the following:
+
+1. What is the difference between GET and POST?
+2. Why do we use @csrf in forms?
+3. What is session used for in this activity?
+4. What happens if session is cleared?
+
+Answers:
+1. GET is used to retrieve or display data from the server, while POST is used to send data to the server, such as form inputs. GET shows the data in the URL, while POST keeps it hidden.
+2. @csrf is used to protect the form from unauthorized or malicious requests by adding a security token to verify that the request is coming from the application.
+3. Session is used to store the emails temporarily so they remain available even after the page reloads and can be displayed to the user.
+4. If the session is cleared, all stored emails will be removed, and the list will reset to empty.
